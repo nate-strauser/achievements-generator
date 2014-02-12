@@ -131,8 +131,6 @@ var achievements = {
 			key:'days-2',
 			multiple:true,
 			earned:function(previousSubmissions, lastSubmission, baseMoment){
-
-				//var baseMoment = moment().set('hour', 0).set('minute', 0).set('second', 0).set('millisecond', 0);
 				return notYetEarnedToday(this.key, lastSubmission.userId, baseMoment) 
 					&& submitedDaysAgo(1, lastSubmission.userId, baseMoment)
 					&& !submitedDaysAgo(2, lastSubmission.userId, baseMoment); //prevent re-earning during days in a row
@@ -144,7 +142,6 @@ var achievements = {
 			key:'days-3',
 			multiple:true,
 			earned:function(previousSubmissions, lastSubmission, baseMoment){
-				//var baseMoment = moment().set('hour', 0).set('minute', 0).set('second', 0).set('millisecond', 0);
 				return notYetEarnedToday(this.key, lastSubmission.userId, baseMoment) 
 					&& submitedDaysAgo(1, lastSubmission.userId, baseMoment)
 					&& submitedDaysAgo(2, lastSubmission.userId, baseMoment)
@@ -157,7 +154,6 @@ var achievements = {
 			key:'days-10',
 			multiple:true,
 			earned:function(previousSubmissions, lastSubmission, baseMoment){
-				//var baseMoment = moment().set('hour', 0).set('minute', 0).set('second', 0).set('millisecond', 0);
 				return notYetEarnedToday(this.key, lastSubmission.userId, baseMoment) 
 					&& submitedDaysAgo(1, lastSubmission.userId, baseMoment)
 					&& submitedDaysAgo(2, lastSubmission.userId, baseMoment)

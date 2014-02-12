@@ -1,0 +1,1 @@
+subscriptionHandle = Meteor.subscribe("userData");

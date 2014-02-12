@@ -24,13 +24,13 @@
 			<br>
 			Version: {{version}}
 			<br>
-			Session: <a href="/sessions/{{sessionId}}">{{sessionId}}</a>
+			Session: <a href="/sessions/{{sessionId}}"><i class="fa fa-eye"></i></a>
 			<br>
-			Submission: <a href="/submissions/{{submissionId}}">{{submissionId}}</a>
+			Submission: <a href="/submissions/{{submissionId}}"><i class="fa fa-eye"></i></a>
 		</div>
 	{{/with}}
 </template>
 
 <template name="achievementEmbed">
-	<div>{{title}} - {{message}} - {{getPrettyDateAndTime timestamp}} - <a href="{{pathFor 'achievement'}}">{{_id}}</div>
+	<div>{{title}} - {{message}} - {{getPrettyDateAndTime timestamp}} - <a href="{{pathFor 'achievement'}}"><i class="fa fa-eye"></i></div>
 </template>
